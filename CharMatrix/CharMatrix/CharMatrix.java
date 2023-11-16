@@ -69,8 +69,8 @@ public class CharMatrix
 
     public void clearRect(int row0, int col0, int row1, int col1){
         //Fills the given rectangle with the SPACE characters. row0, col0 is the upper left corner and row1, col1 is the lower right corner of the rectangle.
-        for(int r = row0; r<row1; r++) {
-            for(int c = col0; c<col1; c++) {
+        for(int r = row0; r<=row1; r++) {
+            for(int c = col0; c<=col1; c++) {
                 grid[r][c] = ' ';
             }
         }
